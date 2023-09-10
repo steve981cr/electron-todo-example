@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <title>To Do Detail</title>
+  </head>
+  <body class="container">
+    <h1 class="h1 mt-3">To Do Detail (editable)</h1>
+    <hr>
+
+    <form id="form">
+      <div class="mb-3">
+        <label for="task" class="form-label">Task</label>
+        <input type="text" class="form-control" id="task">
+      </div>
+
+      <div class="mb-3">
+        <label for="details" class="form-label">Details</label>
+        <textarea class="form-control" id="details" rows="7"></textarea>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="done">
+        <label class="form-check-label" for="done">Done</label>
+      </div>
+
+      <button type="submit" class="btn btn-outline-dark">Save Changes</button>
+      <button type="button" id="delete-btn" class="float-end btn btn-outline-danger">Delete</button>
+    </form>
+
+    <script src="./edit.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="card">
+      <h1 class="card-header bg-dark text-light vertical-center">
+        To Do List
+        <button id="add-btn" class="btn btn-secondary btn-sm align-left">Add ToDo</button>
+      </h1>
+
+      <ul id="todo-list" class="list-group list-group-flush"></ul>
+    </div>
+    <script src="./todos.js"></script>
+  </body>
+</html>
